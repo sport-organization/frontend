@@ -1,0 +1,134 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.header {
+  background-color: black;
+}
+
+.header-box {
+  display: flex;
+  width: 1392px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 23px;
+  padding-bottom: 24px;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 316px;
+  margin-right: 400px;
+  gap: 73px;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-link {
+  color: #fff;
+  text-shadow: 0 0 5px white;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #1869ff;
+  text-shadow: 0 0 5px #1869ff;
+}
+
+.header-Logout {
+  max-width: 19px;
+  max-height: 18px;
+  display: flex;
+  margin: auto;
+}
+
+.logoutBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Main */
+
+/* Viktor-Inga Part (Offers) */
+
+.offersDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.offersText {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.offerDiv {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.offerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -2;
+}
+
+.darkOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.offerText {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  font-size: 24px;
+}
+
+/* footer */
+
+.footer {
+  background: rgba(0, 0, 0, 0.39);
+  padding-top: 25px;
+  padding-bottom: 29px;
+}
+
+.header-box {
+  width: 1336px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-text {
+  height: 60px;
+  color: rgba(255, 255, 255, 0.32);
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
