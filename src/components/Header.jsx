@@ -1,28 +1,33 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
       <header className="header">
         <div className="header-box">
-          <img
-            className="header-logo"
-            src="./src/assets/images/logo.svg"
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              className="header-logo"
+              src="./src/assets/images/logo.svg"
+              alt="logo"
+            />
+          </Link>
+
           <ul className="header-list">
             <li className="header-item">
-              <a className="header-link" href="./index.html">
+              <Link to="/homepage" className="header-link">
                 главная
-              </a>
+              </Link>
             </li>
             <li className="header-item">
-              <a className="header-link" href="#">
+              <Link to="/trainings" className="header-link">
                 тренировки
-              </a>
+              </Link>
             </li>
             <li className="header-item">
-              <a className="header-link" href="#">
+              <Link to="/stats" className="header-link">
                 статьи
-              </a>
+              </Link>
             </li>
           </ul>
           <button className="logoutBtn">

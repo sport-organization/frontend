@@ -11,7 +11,7 @@ function Offer({ offerText, offerBackground }) {
       ></div>
       <div className="darkOverlay"></div>
       <h3 className="offerText">
-        <span style={{ color: "#1869FF" }}>{offerTextArray[0]}</span>{" "}
+        <span style={{ color: "#1869FF" }}>{offerTextArray[0]}</span>
         {offerTextArray.slice(1).join(" ")}
       </h3>
     </div>

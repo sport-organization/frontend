@@ -1,21 +1,24 @@
-import './App.css'
-import './css/reset.css'
+import "./App.css";
+import "./index.css";
 
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
-import Sections from './sections/Sections'
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import HomePage from "./components/Pages/Main/HomePage";
+import TrainPage from "./components/Pages/TrainingsPage/Training";
+import Stats from "./components/Pages/Stats/Stats";
 
 function App() {
-
   return (
     <>
-      <Header />
-      <Main />
-      <Sections />
-      <Footer />
+      <Routes>
+           <Route path="/" element={<Layout />}>
+             <Route path="/homepage" element={<HomePage />} />
+             <Route path="/trainings" element={<TrainPage />} />
+             <Route path="/stats" element={<Stats />} />
+           </Route>
+         </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
